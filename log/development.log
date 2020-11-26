@@ -73,3 +73,30 @@ Migrating to ChangeTableName (20201126071901)
   ↳ config/boot.rb:4:in `load'
   [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7139173390688850840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to ChangeTableName (20201126071901)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "matrix_characters" RENAME TO "characters"[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.7ms)[0m  [1m[35mALTER INDEX "matrix_characters_pkey" RENAME TO "characters_pkey"[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "public"."matrix_characters_id_seq" RENAME TO "characters_id_seq"[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20201126071901"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7139173390688850840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
