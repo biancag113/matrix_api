@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # Make sure the below reflects your local postgres user
+  port: 5433
+  host: localhost
+  # username: test5
+  # password: test5
+
+## These are the settings that are used when working locally
+development:
+  <<: *default
+  database: matrix_api_development
+
+test:
+  <<: *default
+  database: matrix_api_test
+
+## These are the settings that'll be used when deploying to heroku that grabs the environmental variable heroku will send.
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
