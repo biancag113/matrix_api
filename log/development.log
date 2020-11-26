@@ -1,0 +1,4 @@
+  [1m[35m (748.1ms)[0m  [1m[35mCREATE DATABASE "matrix_api_development" ENCODING = 'unicode'[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (564.0ms)[0m  [1m[35mCREATE DATABASE "matrix_api_test" ENCODING = 'unicode'[0m
+  ↳ config/boot.rb:4:in `load'
