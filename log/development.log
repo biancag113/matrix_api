@@ -100,3 +100,5 @@ Migrating to ChangeTableName (20201126071901)
   ↳ config/boot.rb:4:in `load'
   [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ config/boot.rb:4:in `load'
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
